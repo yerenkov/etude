@@ -3,7 +3,7 @@ import {text} from "./text.js"
 let pageN = 0
 let t
 let textArray = text.split(". ")
-console.log(textArray[332]);
+console.log(textArray[14]);
 let sAmount = 50
 
 function handlePage() {
