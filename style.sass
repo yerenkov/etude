@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap')
+$navHeight: 50px
 *
     margin: 0
     padding: 0
+html
+    scrollbar-width: none
 body
     font-family: 'Nunito', sans-serif
-    scrollbar-width: none
     color: #222
-    overflow-y: scroll
     .container
         width: 90%
         max-width: 1000px
         margin: auto
     form
         padding-top: 20px
-        padding-bottom: 61px
+        padding-bottom: calc($navHeight + 20px)
         p
             // text-indent: 40px
         nav
@@ -28,10 +29,11 @@ body
             align-items: center
             // display: none
             button
-                line-height: 40px
+                line-height: $navHeight
                 color: #555
                 background-color: #ffffff00
                 display: block
                 padding: 0 20px
                 border: none
                 cursor: pointer
+                font-family: 'Nunito', sans-serif
