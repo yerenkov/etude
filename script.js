@@ -18,6 +18,7 @@ next.onclick = () => {
     if (pageN < textArray.length/sAmount-1) {
         pageN++
         handlePage()
+        document.documentElement.scrollTop = 0;
     }
 }
 
@@ -25,5 +26,6 @@ prev.onclick = () => {
     if (pageN > 0) {
         pageN--
         handlePage()
+        document.documentElement.scrollTop = 0;
     }
 }
