@@ -34,7 +34,20 @@ body
                 color: #999
                 background-color: #ffffff00
                 display: block
-                padding: 0 20px
+                // padding: 0 20px
                 border: none
                 cursor: pointer
                 font-family: 'Nunito', sans-serif
+                // width: 50px
+                height: $navHeight
+                width: $navHeight
+                display: flex
+                justify-content: center
+                align-items: center
+                &#next
+                    svg
+                        transform: scaleX(-1)
+                svg
+                    width: calc($navHeight / 4)
+                    height: calc($navHeight / 4)
+                    opacity: 0.4
